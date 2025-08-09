@@ -9,10 +9,12 @@ const playerScore = document.getElementById('player-score');
 const modal = document.getElementById('modal');
 const no = document.getElementById('no');
 const yes = document.getElementById('yes')
+const savedScore = JSON.parse(localStorage.getItem('RPSScore')) || { player: 0, computer: 0 };
+
 const score = {
-  player: JSON.parse(localStorage.getItem('RPSScore')).player || 0,
-  computer: JSON.parse(localStorage.getItem('RPSScore')).computer || 0
-}
+  player: savedScore.player,
+  computer: savedScore.computer
+};
 
 computerScore.innerHTML = `<span>Computer:</span> ${JSON.parse(localStorage.getItem('RPSScore')).computer}` || '<span>Computer:</span> ' + 0;
 playerScore.innerHTML = `<span>Player:</span> ${JSON.parse(localStorage.getItem('RPSScore')).player}` || '<span>Player: </span>' + 0
