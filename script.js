@@ -16,9 +16,8 @@ const score = {
   computer: savedScore.computer
 };
 
-computerScore.innerHTML = `<span>Computer:</span> ${JSON.parse(localStorage.getItem('RPSScore')).computer}` || '<span>Computer:</span> ' + 0;
-playerScore.innerHTML = `<span>Player:</span> ${JSON.parse(localStorage.getItem('RPSScore')).player}` || '<span>Player: </span>' + 0
-
+computerScore.innerHTML = `<span>Computer:</span> ${savedScore.computer}`;
+playerScore.innerHTML = `<span>Player:</span> ${savedScore.player}`;
 function playGame(playerChoice){
   const computerChoice = pickComputerChoice();
   if(playerChoice === computerChoice){
