@@ -1,0 +1,142 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html{
+  font-size: 10px;
+}
+
+body{
+  font-family: Arial;
+}
+
+.container{
+  width: 90%;
+  max-width: 700px;
+  margin: auto;
+}
+h1{
+  font-size: 5rem;
+  padding: 2rem 0;
+  margin-top: 2rem;
+}
+
+.play, .picks{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 0;
+}
+
+.picks{
+  justify-content: center;
+  text-align: center;
+}
+
+.play button, .picks{
+  font-size: 8rem;
+  padding: 2rem;
+  border:none;
+  border-radius: 50%;
+  transition: 1s;
+}
+
+.picks span{
+  font-size: 3rem;
+}
+
+.play button:active{
+  background: #444;
+}
+
+#computer-score, #player-score{
+  font-size: 2.8rem;
+}
+
+#computer-score span, #player-score span{
+  font-weight: bold;
+}
+
+#result-cover{
+  font-size: 2rem;
+  padding: 2rem 0;
+}
+
+#result{
+  font-size: 7rem;
+  text-align: center;
+  font-weight: bold;
+  padding: 2rem 0;
+}
+
+#reset{
+  background: #bb0000;
+  color: #fff;
+  border: none;
+  border-radius: .5rem;
+  padding: 1.5rem 3rem;
+  margin-top: 3rem;
+  float: right;
+  transition: 1s;
+}
+
+#reset:active{
+  background: white;
+  color: #bb0000;
+  border: 1px solid #bb0000;
+}
+
+.lose{
+  color: red;
+}
+
+.win{
+  color:green;
+}
+
+.tie{
+  color: #222;
+}
+
+.modal{
+  width: 100%;
+  background: #444;
+  padding: 3rem;
+  position: absolute;
+  z-index: 10;
+  top: -20rem;
+  font-size: 2.5rem;
+  text-align: center;
+  color:white;
+  transition: 1s;
+}
+
+#yes, #no{
+  display: inline-block;
+  margin: 2rem;
+  padding:1rem 3rem;
+  border:none;
+  outline: none;
+  border-radius: .2rem;
+  color:#fff;
+}
+
+#no{
+  background-color:#00bb00;
+}
+
+#no:active{
+  background: transparent;
+  border: 1px solid #00bb00;
+}
+
+#yes{
+  background: #bb0000;
+}
+
+#yes:active{
+  background: transparent;
+  border: 1px solid #bb0000;
+}
